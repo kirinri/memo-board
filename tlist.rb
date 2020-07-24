@@ -3,6 +3,7 @@ require 'sinatra/reloader'
 require 'date'
 require 'active_record'
 require 'rack/csrf'
+require "active_support/all"
 
 # セッションの活用を定義
 use Rack::Session::Cookie, :secret => "thisissomethingsecret" 
