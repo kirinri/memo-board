@@ -12,9 +12,9 @@ create table todos
 (
   id integer PRIMARY key,
   users_id integer,
-  users_userName text,
   body text,
-  created_at
+  created_at,
+  foreign key (users_id) references users(id)
 );
 
 insert into users
